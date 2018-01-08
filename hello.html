@@ -20,10 +20,15 @@ text-align: center;
 font-size: 60px;
 font-family: chiller;
 }
+button {
+background-color: red;
+}
 </style>
 </head>
 <body>
 <h1>Hello, Nic!</h1>
 <p>How are you doing?</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Great</button>
+<p id="demo" style="display:none">Thanks for telling me.</p>
 </body>
 </html>
