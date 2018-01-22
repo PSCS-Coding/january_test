@@ -36,8 +36,10 @@ background-color: red;
 <h1>Hello, Nic!</h1>
 <h2>Badoink it's Sam</h2>
 <p>How are you doing?</p>
-<button type="button" onclick="confirm("Thanks for telling me.")">Great</button>
-<button type="button" onclick="confirm("That is too bad.")">Horrible</button>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Great</button>
+<p id="demo" style="display:none">Thanks for telling me.</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Horrible</button>
+<p id="demo2" style="display:none">That's too bad.</p>
 <<<<<<< HEAD
 <iframe width="500" height="500" src="https://www.youtube.com/embed/HcAk2S7-45s"allowfullscreen>
 </iframe>
