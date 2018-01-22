@@ -45,6 +45,23 @@ background-color: red;
 </iframe>
 <iframe width="500" height="500" src="https://www.youtube.com/embed/DwF9Nn9UNFU"allowfullscreen>
 </iframe>
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
 =======
 <img src="https://i.imgur.com/G9g5CxT.gif">
 >>>>>>> b2c07ce544ea18f8850c885a32ea3503821e676f
