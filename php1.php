@@ -13,4 +13,3 @@
 <footer>
   <p>toes</p>
 </footer>
-</html>
